@@ -4,12 +4,12 @@
 {% assign status = componentPage.status %}
 {% endif %}
 
-{% if status == 'Deprecated' %}
-{% assign badge = "negative" %}
-{% elsif status == 'Complete' %}
-{% assign badge = "positive" %}
+{% if status == 'Onaylanmadı' %}
+{% assign badge = "negatif" %}
+{% elsif status == 'Tamamlandı' %}
+{% assign badge = "pozitif" %}
 {% else %}
-{% assign badge = "caution" %}
+{% assign badge = "dikkat" %}
 {% endif %}
 
 {% if status %}
